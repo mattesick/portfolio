@@ -1,16 +1,40 @@
 nav{
     background:#222;
     height:100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:10px;
-    color:white;
+
+    padding:0 20%;
+
+    .container{
+        padding:10px;
+        color:white;
+        border-bottom:2px solid #444;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     h1{
         margin:0;
         display:inline;
     }
-    li{
-        list-style-type: none;
+    ul div{
+        padding:10px;
+        display:inline;
+        font-size:2em;
+        color:#3b5998;
+        cursor:pointer;
+        transition:100ms all ease-in-out;
     }
+        ul div:nth-child(2){
+        color:#2867B2;
+    }
+    ul div:nth-child(3){
+        color:rgb(172, 169, 13);
+    }
+    ul div:nth-child(4){
+        color:white;
+    }
+    ul div:hover{
+        color:#666;
+    }
+
 }
